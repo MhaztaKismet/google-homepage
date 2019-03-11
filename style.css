@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* Header */
+#header {
+    padding:20px 10px;
+}
+#header a {
+    color: #666;
+}
+.upper-left-nav {
+    float: left;
+}
+.upper-left-nav li{
+    display: inline;
+    padding: 0 10px;
+}
+.upper-right-nav {
+    float: right;
+}
+.upper-right-nav li {
+    display: inline;
+    padding: 0 10px;
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    display: block;
+    padding-top: 180px;
+    margin: 0 auto;
+}
+.main-content .google-logo img {
+    width: 272px;
+    height: 92px;
+    display: block;
+    margin: auto;
+}
+.search-form {
+   display: block;
+   margin: 25px auto 0 auto;
+   width: 575px;
+   border: 1px solid #e8e8e8;
+   border-radius: 2px;   
+   box-shadow: 0 1px 3px #dcdcdc;
+   padding: 12px;
+}
+.search-form:hover {
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+#box {
+   border: none;
+   font-size: 14px;
+   font-family: arial;
+   width: 525px;
+   display: inline-block;  
+   outline: none;
+}
+#voice-search {
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    outline: none;
+}
+.search-buttons {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.search-buttons button {
+    display: inline;
+    margin: 20px 3px;
+    padding: 10px 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 13px;
+}
+.search-buttons button:hover {
+    color: #000000;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+
+/* Footer */
+#footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid rgb(211, 211, 211);
+    background-color: rgb(235, 235, 235);
+    padding: 10px;
+}
+#footer li {
+    display: inline;
+    padding: 0 10px;
+}
+#footer li a {
+    color: #666;
+}
+.bottom-left-nav {
+    float: left;
+}
+.bottom-right-nav {
+    float: right;
+}
+
