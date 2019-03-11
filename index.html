@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<title>Fake Google</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-</head>
-<body>
-<div class="main-container">
-	<!-- The main navbar -->
-	<nav class="navbar">
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Store</a></li>
-			<div class="float-right">
-				<li><a href="">Gmail</a></li>
-				<li><a href="">Images</a></li>
-				<li><a href=""><img class="google-apps" src="images/google-apps-grey.png" alt="Google apps icon"></a></li>
-				<li><button>Sign in</button></li>
-			</div>
-		</ul>
-	</nav>
-	<!-- The main google logo -->
-	<div class="logo-container">
-		<img src="images/google-logo.png" alt="The Google logo">
-	</div>
-	<!-- The google search bar, divided into two divs-->
-	<div class="search-bar-container">
-		<!-- the exterior is for the look of the bar  -->
-		<div class="search-bar-outer">
-			<!-- and the inner is the for actual text -->
-			<input class="search-bar-inner" type="search">
-			<!-- The little mic icon next to search bar -->
-			<div class="google-mic">
-				<img src="images/google-mic.png" alt="Google mic icon">
-			</div>
-		</div>
-	</div>
-	<!-- The two search buttons below the search bar -->
-	<div class="buttons-container">
-		<button>Google Search</button>
-		<button>I'm Feeling Lucky</button>
-	</div>
-	<!-- The footer, very similar to the navbar -->
-	<footer class="footer">
-            <div class="footer-row">
-                    <p>Australia</p>
+    <head>
+        <title>Google</title>
+        <link rel="icon" type="image/gif/png" href="./images/google-favicon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="header">
+                <ul class="upper-left-nav">
+                    <li><a href="https://www.google.com/intl/en/about/?fg=1&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=hp-header">About</a></li>
+                    <li><a href="https://store.google.com/?utm_source=hp_header&amp;utm_medium=google_oo&amp;utm_campaign=GS100042">Store</a></li>
+                </ul>
+                <ul class="upper-right-nav">
+                    <li><a href="https://www.gmail.com">Gmail</a></li>
+                    <li><a href="https://www.google.al/imghp?hl=en&tab=wi">Images</a></li>
+                    <li><a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign In</a></li>
+                </ul>
+                
+        </nav>
+        
+        <div class="main-content">
+            <div class="google-logo">
+                <img src="./images/googlelogo.png">
             </div>
-		<ul>
-			<li><a href="">Advertising</a></li>
-			<li><a href="">Business</a></li>
-			<div class="float-right">
-				<li><a href="">Privacy</a></li>
-				<li><a href="">Terms</a></li>
-				<li><a href="">Settings</a></li>
-			</div>
-		</ul>
-	</footer>
-</div>
-</body>
+            
+            <form class="" action="/search" method="GET">
+                <div class="search-form">
+                    <input type="text" name="search" class="search-bar" autofocus="autofocus" id="box">
+                    <input type="image" src="./images/googlemic.png" name="voice-search" id="voice-search">
+                </div>
+                <div class="search-buttons">
+                    <button type="button" name="google-search">Google Search</button>
+                    <button type="button" name="random">I'm Feeling Lucky</button>
+                </div>
+            </form>   
+        </div>
+        
+
+        <nav id="footer">
+            <ul class="bottom-left-nav">
+                <li><a href="https://adwords.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#?modal_active=none">Advertising</a></li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+                <li><a href="https://www.google.com/intl/en_al/about/?utm_source=google-AL&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+            </ul>
+            <ul class="bottom-right-nav">
+                <li><a href="https://policies.google.com/privacy?hl=en&gl=us">Privacy</a></li>
+                <li><a href="https://policies.google.com/terms?hl=en&gl=us">Terms</a></li>
+                <li><a href="https://www.google.com/preferences?hl=en">Settings</a></li>
+            </ul>        
+        </nav>
+    </body>
 </html>
